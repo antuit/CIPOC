@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cipoc.iml" filepath="$PROJECT_DIR$/.idea/modules/cipoc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cipoc-build.iml" filepath="$PROJECT_DIR$/.idea/modules/cipoc-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIPOC.iml" filepath="$PROJECT_DIR$/CIPOC.iml" />
     </modules>
   </component>
 </project>
