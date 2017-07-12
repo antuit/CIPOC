@@ -4,4 +4,4 @@ class test
     {
         System.out.println("Test CIPOC");
     }
-}
+}   
