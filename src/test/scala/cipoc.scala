@@ -22,11 +22,11 @@ object cipoc {
     val hiveContext = new org.apache.spark.sql.hive.HiveContext(sc)
 
 
-    val df = hiveContext.read.format("com.databricks.spark.csv").option("header", "true").load("/user/nijanthan/real state.csv")
+    val df = hiveContext.read.format("com.databricks.spark.csv").option("header", "true").load("/home/gitrepo/CSV_Files/Real_Estate1.xlsx")
 
     df.registerTempTable("csvload")
 
-    hiveContext.sql("insert into sampletable select * from csvload")
+    hiveContext.sql("insert into real_estate_trans select * from csvload")
 
   }
 
