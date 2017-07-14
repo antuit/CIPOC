@@ -1,4 +1,4 @@
-/**
+/************
   * Created by hrishikesh.kshatriya on 7/12/2017.
   */
 import org.apache.spark.sql.DataFrame
@@ -12,22 +12,29 @@ import java.util.Calendar
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.hive.HiveContext
 import org.apache.spark.sql.functions.lit
+import org.apache.spark.sql._
+import org.apache.spark.sql.hive._
 
 object cipoc {
   def main(args: Array[String]): Unit = {
 
 
-    val conf = new SparkConf().setAppName("DeltaAdd     "+table)
+    val conf = new SparkConf().setAppName("CIPOC Test").setMaster("local[*]")
     val sc = new SparkContext(conf)
     val hiveContext = new org.apache.spark.sql.hive.HiveContext(sc)
+    import hiveContext.implicits._
+    val sanSource = hiveContext.read.format("jdbc").
+    option("url", "jdbc:postgresql://10.0.0.8:5432/postgrescommon").
+    option("jdbc_driver_library" , "postgresql-9.4-1201-jdbc41.jar").
+    option("driver", "org.postgresql.Driver").
+    option("dbtable", "company").
+    option("user", "postgrescommon").
+    option("password", "postgrescommon").load()
+    sanSource.registerTempTable("sourceData")
+    hiveContext.sql("INSERT INTO TABLE cipoc.sample SELECT * FROM sourceData")
 
-
-    val df = hiveContext.read.format("com.databricks.spark.csv").option("header", "true").load("/home/gitrepo/CSV_Files/Real_Estate1.xlsx")
-
-    df.registerTempTable("csvload")
-
-    hiveContext.sql("insert into cipoc.real_estate_trans select * from csvload")
 
   }
 
-}   
+
+}
