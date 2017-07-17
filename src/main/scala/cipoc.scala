@@ -31,10 +31,7 @@ object cipoc {
     option("user", "postgrescommon").
     option("password", "postgrescommon").load()
     sanSource.registerTempTable("sourceData")
-    hiveContext.sql("SELECT COUNT(*) as count_before from  cipoc.sample")    
     hiveContext.sql("INSERT INTO TABLE cipoc.sample SELECT * FROM sourceData")
-    hiveContext.sql("SELECT COUNT(*) as count_before from  cipoc.sample")
-
 
   }
 
