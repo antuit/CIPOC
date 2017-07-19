@@ -24,12 +24,8 @@ echo $HCOUNT2
 if [$PCOUNT2=$HCOUNT2]
 then
 	echo "Source and Destination counts match, Testcase : PASSED"
-	exit 1
+	exit 0
 else
 	echo "Source count $PCOUNT2 and Destination count $HCOUNT2, Testcase : FAILED"
-	exit 0
+	exit 1
 fi
-
-
-
-#hive -hiveconf DB_NAME=$db_name -hiveconf TABLE_NAME=$table_name -f /home/gitrepo/CIPOC/select.hql
