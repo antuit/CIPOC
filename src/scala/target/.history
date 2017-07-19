@@ -1,0 +1,7 @@
+exit
+compile
+exit
+run-main cipoc
+compile cipoc
+compile
+exit

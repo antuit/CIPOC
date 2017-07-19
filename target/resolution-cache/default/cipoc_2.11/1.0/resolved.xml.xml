@@ -4,7 +4,7 @@
 		module="cipoc_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170714070202"
+		publication="20170718102235"
 	>
 		<description>
 		cipoc
@@ -34,6 +34,8 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="3.0.1" conf="test->default(compile)"/>
+		<dependency org="com.novocode" name="junit-interface" rev="0.8" conf="test->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="2.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="2.1.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-mllib_2.11" rev="2.1.0" conf="compile->default(compile)"/>

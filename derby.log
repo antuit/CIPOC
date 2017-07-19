@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Jul 14 06:46:20 UTC 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-015d-3fd9-1eeb-00002cb37ba8 
+on database directory /home/gitrepo/CIPOC/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@156d072d 
+Loaded from file:/home/sreedevi/.ivy2/cache/org.apache.derby/derby/jars/derby-10.10.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_45-b14
+user.dir=/home/gitrepo/CIPOC
+os.name=Linux
+os.arch=amd64
+os.version=2.6.32-696.1.1.el6.x86_64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
