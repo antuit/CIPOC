@@ -22,3 +22,5 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-streaming" % sparkVersion,
   "org.apache.spark" %% "spark-hive" % sparkVersion
 )
+testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-u", "target/test-reports")
+

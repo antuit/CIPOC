@@ -141,3 +141,23 @@ compile
 test
 compile
 test
+compile
+run
+test
+compile
+test
+compile
+test
+compile
+test
+compile
+run
+compile
+test
+compile
+test
+package
+sbt compile
+compile
+test
+package
