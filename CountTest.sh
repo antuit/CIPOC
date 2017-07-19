@@ -26,4 +26,21 @@ else
 	echo "Source count $PCOUNT2 and Destination count $HCOUNT2, Testcase : FAILED"
 fi
 
+touch TestResult.html
+Output_File=TestResult.html
+
+echo "<html>" > $Output_File
+echo "<title> Test" >> $Output_File
+echo "</title>" >> $Output_File
+echo "<body>" >> $Output_File
+echo "<table border style="05">" >> $Output_File
+echo $line >> $Output_File
+echo "</td>" >> $Output_File
+echo "</tr>" >> $Output_File
+echo "</table>" >> $Output_File
+echo "</body>" >> $Output_File
+echo "</html>" >> $Output_File
+
+cat TestResult.html
+
 #hive -hiveconf DB_NAME=$db_name -hiveconf TABLE_NAME=$table_name -f /home/gitrepo/CIPOC/select.hql
