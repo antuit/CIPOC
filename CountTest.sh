@@ -21,7 +21,7 @@ HCOUNT2=$(echo $HCOUNT1 | tr -d ' ')
 echo $HCOUNT2
 
 
-if [$PCOUNT2=$HCOUNT2]
+if [$PCOUNT2==$HCOUNT2]
 then
 	echo "Source and Destination counts match, Testcase : PASSED"
 	exit 0
