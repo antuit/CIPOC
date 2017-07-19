@@ -20,7 +20,8 @@ HCOUNT1=`hive -S -e "select count(*) from cipoc.sample;"`
 HCOUNT2=$(echo $HCOUNT1 | tr -d ' ')
 #echo $HCOUNT2
 
-PCOUNT2=100
+#Comment below line for Successful Build, uncomment for Failure 
+#PCOUNT2=100
 
 if [ "$PCOUNT2" == "$HCOUNT2" ]
 then
