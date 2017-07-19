@@ -44,24 +44,25 @@ def main(args: Array[String]): Unit = {
                 
   }
   
-  def getSrcConnection()  = {
-                val driver = "org.postgresql.Driver"
+ def getSrcConnection(): Boolean = {
+    val driver = "org.postgresql.Driver"
     val url = "jdbc:postgresql://10.0.0.8:5432/postgrescommon"
     val username = "postgrescommon"
-    val password = "postgrescommon1"
-                var connection:Connection = null
-                try {
+    val password = "postgrescommon"
+
+    try {
+      var connection: Connection = null
       Class.forName(driver)
       connection = DriverManager.getConnection(url, username, password)
-	if(connection == null){
-   		false
-	} else{
-   		true
-	} 
-        } catch {
-      case e => e.printStackTrace
+      return true
+
+    } catch {
+      case _: Throwable =>
+        println("|||| Connectivity Failed for Postgres DB :")
+        return false
     }
-}
+
+  }
 
 }
 
