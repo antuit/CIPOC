@@ -12,14 +12,15 @@ EOF`
 
 PCOUNT1=${PCOUNT:21:2}
 PCOUNT2=$(echo $PCOUNT1 | tr -d ' ')
-echo ${PCOUNT2}
+#echo ${PCOUNT2}
 
 db_name=cipoc
 table_name=real_estate_trans
 HCOUNT1=`hive -S -e "select count(*) from cipoc.sample;"`
 HCOUNT2=$(echo $HCOUNT1 | tr -d ' ')
-echo $HCOUNT2
+#echo $HCOUNT2
 
+PCOUNT2=100
 
 if [ "$PCOUNT2" == "$HCOUNT2" ]
 then
