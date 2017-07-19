@@ -12,7 +12,7 @@ EOF`
 
 PCOUNT1=${PCOUNT:21:2}
 PCOUNT2=$(echo $PCOUNT1 | tr -d ' ')
-#echo ${PCOUNT2}
+#echo ${PCOUNT2}999
 
 db_name=cipoc
 table_name=real_estate_trans
