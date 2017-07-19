@@ -40,6 +40,7 @@ def main(args: Array[String]): Unit = {
     option("user", "postgrescommon").
     option("password", "postgrescommon").load() 
     sanSource.registerTempTable("sourceData")
+    hiveContext.sql("truncate table cipoc.sample")
     hiveContext.sql("INSERT INTO TABLE cipoc.sample SELECT * FROM sourceData")
                 
   }
