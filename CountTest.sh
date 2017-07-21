@@ -25,9 +25,15 @@ HCOUNT2=$(echo $HCOUNT1 | tr -d ' ')
 
 if [ "$PCOUNT2" == "$HCOUNT2" ]
 then
-	echo "Source and Destination counts match, Testcase : PASSED"
+	echo "Integration -  Data Testing"
+	echo "---------------------------"
+	echo "Source and Destination counts match, Load successful"
+	echo "Testcase : PASSED"
 	exit 0
 else
-	echo "Source count $PCOUNT2 and Destination count $HCOUNT2, Testcase : FAILED"
+	echo "Integration -  Data Testing"
+	echo "---------------------------"
+	echo "Source count $PCOUNT2 and Destination count $HCOUNT2, Load failed"
+	echo "Testcase : FAILED"
 	exit 1
 fi
