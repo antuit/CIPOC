@@ -1,10 +1,8 @@
 
 /***********editing from STS
 
-/************
-
   * Created by hrishikesh.kshatriya on 7/12/2017.
-  */
+ *****************/
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.Row
 import java.security.MessageDigest
