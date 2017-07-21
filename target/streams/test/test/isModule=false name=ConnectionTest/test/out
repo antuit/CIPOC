@@ -1,3 +1,14 @@
 [0m[[0minfo[0m] [0m[32mConnectionTest:[0m[0m
-[0m[[0minfo[0m] [0m[32mconnection object[0m[0m
-[0m[[0minfo[0m] [0m[32m- should null[0m[0m
+[0m[[0minfo[0m] [0m[31m- Checking JDBC Connection Established or Not !!! *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.AssertionError:[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.junit.Assert.fail(Assert.java:91)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.junit.Assert.assertTrue(Assert.java:43)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.junit.Assert.assertTrue(Assert.java:54)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ConnectionTest$$anonfun$1.apply$mcV$sp(ConnectionTest.scala:9)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ConnectionTest$$anonfun$1.apply(ConnectionTest.scala:9)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at ConnectionTest$$anonfun$1.apply(ConnectionTest.scala:9)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

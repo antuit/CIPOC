@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
-Fri Jul 14 06:46:20 UTC 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-015d-3fd9-1eeb-00002cb37ba8 
-on database directory /home/gitrepo/CIPOC/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@156d072d 
-Loaded from file:/home/sreedevi/.ivy2/cache/org.apache.derby/derby/jars/derby-10.10.2.0.jar
+Wed Jul 19 05:30:45 UTC 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-015d-5953-b62c-00002ce8fd28 
+on database directory /home/gitrepo/CIPOC/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@799c3c6c 
+Loaded from file:/home/gopesh/.ivy2/cache/org.apache.derby/derby/jars/derby-10.10.2.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_45-b14
 user.dir=/home/gitrepo/CIPOC
