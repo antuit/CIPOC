@@ -6,7 +6,7 @@ import org.scalatest.FunSuite
 class ConnectionTest extends FunSuite {
 
   test("Checking JDBC Connection Established or Not ?!!!") {
-    assertFalse(cipoc.getSrcConnection());
+    assertTrue(cipoc.getSrcConnection());
   }
 
 }
