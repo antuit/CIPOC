@@ -21,7 +21,7 @@ HCOUNT2=$(echo $HCOUNT1 | tr -d ' ')
 #echo $HCOUNT2
 
 #Comment below line for Successful Build, uncomment for Failure 
-#PCOUNT2=100 updatesddfsfsdfsd
+#PCOUNT2=100 updatesddfsfsdfsdsfdfdfss
 
 if [ "$PCOUNT2" == "$HCOUNT2" ]
 then
