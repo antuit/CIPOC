@@ -1,4 +1,4 @@
-#dskfhjsdkfhdddddddddddsahjks
+#JenkinsPipelineBuild8
 #!/bin/sh
 set +e
 DATABASE=postgrescommon
