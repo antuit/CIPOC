@@ -27,7 +27,7 @@ HCOUNT2=$(echo $HCOUNT1 | tr -d ' ')
 echo "after getting count from hive"
 
 #Comment below line for Successful Build, uncomment for Failure 
-#PCOUNT2=100 testtttttt
+PCOUNT2=100
 echo "before comparing postgres and hive values"
 if [ "$PCOUNT2" == "$HCOUNT2" ]
 then
