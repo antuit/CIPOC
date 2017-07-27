@@ -1,4 +1,4 @@
-#dskfhjsdkfhsahjks
+#dskfhjsdkfhdddddddddddsahjks
 #!/bin/sh
 set +e
 DATABASE=postgrescommon
