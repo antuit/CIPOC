@@ -12,7 +12,7 @@ select count(*)
 from company
 EOF`
 
-echo "after getting count from postgres"
+echo "after getting count from postgress"
 
 PCOUNT1=${PCOUNT:21:2}
 PCOUNT2=$(echo $PCOUNT1 | tr -d ' ')
