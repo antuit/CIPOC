@@ -16,7 +16,7 @@ echo "after getting count from postgress"
 
 PCOUNT1=${PCOUNT:21:2}
 PCOUNT2=$(echo $PCOUNT1 | tr -d ' ')
-#echo ${PCOUNT2}99955555
+#echo ${PCOUNT2}99955555fdsf
 
 echo "before connecting to hive"
 db_name=cipoc
